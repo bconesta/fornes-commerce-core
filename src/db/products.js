@@ -1,11 +1,12 @@
 import { createPool } from 'mysql2/promise';
+import { DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME } from '../config.js';
 
 const db = createPool({
-    user: 'root',
-    password: 'mierda2017',
-    host: 'localhost',
-    port: '3306',
-    database: 'farmacommerce'
+    user: DB_USER,
+    password: DB_PASSWORD,
+    host: DB_HOST,
+    port: DB_PORT,
+    database: DB_NAME
 });
 
 const getAllProducts = async () => {
