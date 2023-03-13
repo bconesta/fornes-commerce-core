@@ -1,0 +1,8 @@
+POST https://localhost:3030/api/v1
+Content-Type: application/json
+
+{
+    "title": "Producto prueba",
+    "price": 15200,
+    "stock": 10
+}
